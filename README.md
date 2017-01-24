@@ -22,3 +22,19 @@ def the_flying_circus():
         print "thats neither a bird nor a circus item.... no comment =l"
         
 the_flying_circus()
+
+pyg = "ay"
+print"Pig Latin Translator =p"
+
+text = raw_input("Enter a word")
+
+if (text > 0) and text.isalpha():
+    word = text.lower()
+    first = word[0]
+    pig_translator = word + first + pyg
+    pig_translator = pig_translator[1:len(pig_translator)]
+    print pig_translator
+    print "Translator, completed"
+    
+else:
+    print "Empty, plz type a word again."
